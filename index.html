@@ -13,19 +13,18 @@
 </head>
 <body class="bg-slate-100 min-h-screen">
 
-  <!-- Header -->
   <header class="bg-gradient-to-r from-[#1e3a5f] to-[#2d5a87] text-white py-12 px-6 text-center">
     <p class="text-sm uppercase tracking-widest text-white/70 mb-3">Customer Success Proposal</p>
     <h1 class="text-4xl font-bold mb-3">Implementation Department</h1>
     <p class="text-xl text-white/90">Scaling Customer Success for Enterprise Growth</p>
   </header>
 
-  <!-- Navigation -->
   <nav class="bg-[#1e3a5f] sticky top-0 z-10 px-6 py-3">
     <div class="max-w-5xl mx-auto flex gap-2 justify-center flex-wrap">
       <button onclick="showSection('journey')" class="nav-btn active px-4 py-2 rounded-lg text-sm font-medium text-white/80">Value Journey</button>
       <button onclick="showSection('proposal')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-white/80">Full Proposal</button>
       <button onclick="showSection('benefits')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-white/80">Benefits</button>
+      <button onclick="showSection('roi')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-white/80">Paid ROI</button>
       <button onclick="showSection('discussion')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-white/80">Discussion</button>
     </div>
   </nav>
@@ -38,15 +37,9 @@
       <p class="text-gray-600 mb-8 text-center">ActivTrak Launch Program</p>
       
       <div class="bg-white rounded-2xl shadow-xl p-8 mb-6">
-        <!-- Curve visualization -->
         <svg viewBox="0 0 800 80" class="w-full h-20 mb-8">
           <path d="M 40 60 Q 150 55 200 48 Q 300 38 350 30 Q 450 20 500 15 Q 600 8 680 5 Q 740 3 770 2" fill="none" stroke="#e2e8f0" stroke-width="6" stroke-linecap="round"/>
-          <defs>
-            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#1e3a5f"/>
-              <stop offset="100%" stop-color="#5fb8e6"/>
-            </linearGradient>
-          </defs>
+          <defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1e3a5f"/><stop offset="100%" stop-color="#5fb8e6"/></linearGradient></defs>
           <path d="M 40 60 Q 150 55 200 48 Q 300 38 350 30 Q 450 20 500 15 Q 600 8 680 5 Q 740 3 770 2" fill="none" stroke="url(#grad)" stroke-width="3" stroke-linecap="round"/>
           <circle cx="40" cy="60" r="8" fill="#1e3a5f" stroke="white" stroke-width="2"/>
           <circle cx="150" cy="51" r="8" fill="#2d5a87" stroke="white" stroke-width="2"/>
@@ -55,7 +48,6 @@
           <circle cx="480" cy="24" r="8" fill="#5fb8e6" stroke="white" stroke-width="2"/>
           <circle cx="590" cy="15" r="8" fill="#7fcef2" stroke="white" stroke-width="2"/>
           <circle cx="700" cy="6" r="8" fill="#9ee0f9" stroke="white" stroke-width="2"/>
-          <polygon points="775,2 765,7 768,2 765,-3" fill="#5fb8e6"/>
         </svg>
 
         <div class="grid grid-cols-7 gap-2 text-center">
@@ -63,42 +55,42 @@
             <div class="font-bold text-xs text-[#1e3a5f] mb-1">Journey Alignment</div>
             <div class="font-semibold text-xs text-gray-800">Kick Off</div>
             <div class="text-xs text-gray-500 mb-2">Pre-Onboarding</div>
-            <p class="text-xs text-gray-500 italic mb-2">"We understand what success looks like and have a clear roadmap to get there."</p>
+            <p class="text-xs text-gray-500 italic mb-2">"We understand what success looks like."</p>
             <span class="inline-block px-2 py-1 rounded text-xs font-medium text-white bg-[#1e3a5f]">CSM</span>
           </div>
           <div class="p-2">
             <div class="font-bold text-xs text-[#2d5a87] mb-1">Platform Functional</div>
             <div class="font-semibold text-xs text-gray-800">Onboarding</div>
             <div class="text-xs text-gray-500 mb-2">0-14 days</div>
-            <p class="text-xs text-gray-500 italic mb-2">"The platform functions and works in accordance to our environment. The data is accurate."</p>
+            <p class="text-xs text-gray-500 italic mb-2">"The platform works. The data is accurate."</p>
             <span class="inline-block px-2 py-1 rounded text-xs font-medium text-white bg-[#2d5a87]">Onboarding</span>
           </div>
           <div class="p-2">
             <div class="font-bold text-xs text-[#00a86b] mb-1">Training Complete</div>
             <div class="font-semibold text-xs text-gray-800">Implementation</div>
             <div class="text-xs text-gray-500 mb-2">15-30 days</div>
-            <p class="text-xs text-gray-500 italic mb-2">"Our team has been trained on how to use ActivTrak and understands how to leverage key features."</p>
+            <p class="text-xs text-gray-500 italic mb-2">"Our team has been trained on ActivTrak."</p>
             <span class="inline-block px-2 py-1 rounded text-xs font-medium text-white bg-[#00a86b]">Implementation</span>
           </div>
           <div class="p-2">
             <div class="font-bold text-xs text-[#4a9ad4] mb-1">User Adoption</div>
             <div class="font-semibold text-xs text-gray-800">Adoption</div>
             <div class="text-xs text-gray-500 mb-2">31-45 days</div>
-            <p class="text-xs text-gray-500 italic mb-2">"Expected users understand the solution and see its value."</p>
+            <p class="text-xs text-gray-500 italic mb-2">"Users understand and see value."</p>
             <span class="inline-block px-2 py-1 rounded text-xs font-medium text-white bg-[#4a9ad4]">Imp / CSM</span>
           </div>
           <div class="p-2">
             <div class="font-bold text-xs text-[#5fb8e6] mb-1">Baseline & Opportunity</div>
             <div class="font-semibold text-xs text-gray-800">Value Milestone</div>
             <div class="text-xs text-gray-500 mb-2">46-60 days</div>
-            <p class="text-xs text-gray-500 italic mb-2">"We have an accurate understanding of how productivity exists today."</p>
+            <p class="text-xs text-gray-500 italic mb-2">"We understand productivity today."</p>
             <span class="inline-block px-2 py-1 rounded text-xs font-medium text-white bg-[#5fb8e6]">CSM</span>
           </div>
           <div class="p-2">
             <div class="font-bold text-xs text-[#7fcef2] mb-1">Insight-Driven Decisions</div>
             <div class="font-semibold text-xs text-gray-800">Operational</div>
             <div class="text-xs text-gray-500 mb-2">61-120 days</div>
-            <p class="text-xs text-gray-500 italic mb-2">"We are making decisions based on productivity insights; we are no longer making decisions based on feel."</p>
+            <p class="text-xs text-gray-500 italic mb-2">"We make decisions based on insights."</p>
             <span class="inline-block px-2 py-1 rounded text-xs font-medium text-white bg-[#7fcef2]">CSM</span>
           </div>
           <div class="p-2">
@@ -120,95 +112,14 @@
         <h3 class="text-lg font-semibold text-gray-800 mb-3">The Opportunity</h3>
         <p class="text-gray-700 mb-8 leading-relaxed">As ActivTrak has moved upmarket into enterprise, our customer journey needs to evolve with us. Today, training is handled ad hoc by CSMs, which creates inconsistency and pulls CSMs away from strategic account work. A dedicated Implementation function would standardize the customer experience, improve time-to-value, and create a scalable model for growth.</p>
 
-        <h3 class="text-lg font-semibold text-gray-800 mb-3">Proposed Value Journey: 7 Milestones, 6 Months</h3>
-        <div class="overflow-x-auto mb-8">
-          <table class="w-full text-sm border-collapse">
-            <thead>
-              <tr class="border-b-2 border-gray-200">
-                <th class="text-left py-3 pr-4 font-semibold text-gray-700">Phase</th>
-                <th class="text-left py-3 pr-4 font-semibold text-gray-700">Timeline</th>
-                <th class="text-left py-3 pr-4 font-semibold text-gray-700">Milestone</th>
-                <th class="text-left py-3 pr-4 font-semibold text-gray-700">Customer Statement</th>
-                <th class="text-left py-3 font-semibold text-gray-700">Owner</th>
-              </tr>
-            </thead>
-            <tbody class="text-gray-600">
-              <tr class="border-b border-gray-100">
-                <td class="py-3 pr-4 font-medium text-gray-800">Kick Off</td>
-                <td class="py-3 pr-4">Pre-Onboarding</td>
-                <td class="py-3 pr-4">Journey Alignment</td>
-                <td class="py-3 pr-4 italic">"We understand what success looks like and have a clear roadmap to get there."</td>
-                <td class="py-3">CSM</td>
-              </tr>
-              <tr class="border-b border-gray-100">
-                <td class="py-3 pr-4 font-medium text-gray-800">Onboarding</td>
-                <td class="py-3 pr-4">0-14 days</td>
-                <td class="py-3 pr-4">Platform Functional</td>
-                <td class="py-3 pr-4 italic">"The platform functions and works in accordance to our environment. The data is accurate."</td>
-                <td class="py-3">Onboarding</td>
-              </tr>
-              <tr class="border-b border-gray-100 bg-green-50">
-                <td class="py-3 pr-4 font-medium text-gray-800">Implementation</td>
-                <td class="py-3 pr-4">15-30 days</td>
-                <td class="py-3 pr-4">Training Complete</td>
-                <td class="py-3 pr-4 italic">"Our team has been trained on how to use ActivTrak and understands how to leverage key features."</td>
-                <td class="py-3">Implementation</td>
-              </tr>
-              <tr class="border-b border-gray-100">
-                <td class="py-3 pr-4 font-medium text-gray-800">Adoption</td>
-                <td class="py-3 pr-4">31-45 days</td>
-                <td class="py-3 pr-4">User Adoption</td>
-                <td class="py-3 pr-4 italic">"Expected users understand the solution and see its value."</td>
-                <td class="py-3">Implementation / CSM</td>
-              </tr>
-              <tr class="border-b border-gray-100">
-                <td class="py-3 pr-4 font-medium text-gray-800">Value Milestone</td>
-                <td class="py-3 pr-4">46-60 days</td>
-                <td class="py-3 pr-4">Baseline & Opportunity</td>
-                <td class="py-3 pr-4 italic">"We have an accurate understanding of how productivity exists today."</td>
-                <td class="py-3">CSM</td>
-              </tr>
-              <tr class="border-b border-gray-100">
-                <td class="py-3 pr-4 font-medium text-gray-800">Operational</td>
-                <td class="py-3 pr-4">61-120 days</td>
-                <td class="py-3 pr-4">Insight-Driven Decisions</td>
-                <td class="py-3 pr-4 italic">"We are making decisions based on productivity insights; we are no longer making decisions based on feel."</td>
-                <td class="py-3">CSM</td>
-              </tr>
-              <tr>
-                <td class="py-3 pr-4 font-medium text-gray-800">Impact & ROI</td>
-                <td class="py-3 pr-4">121-180 days</td>
-                <td class="py-3 pr-4">Value Capture</td>
-                <td class="py-3 pr-4 italic">"We are improving productivity."</td>
-                <td class="py-3">CSM</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
         <h3 class="text-lg font-semibold text-gray-800 mb-4">Implementation Team Scope</h3>
         <p class="text-sm font-medium text-gray-700 mb-3">Core Responsibilities</p>
         <div class="space-y-4 mb-8">
-          <div>
-            <span class="font-semibold text-gray-800">Onboarding Trainings</span>
-            <span class="text-gray-600"> Handle all structured training sessions during the launch period, ensuring customers reach competency before CSM handoff.</span>
-          </div>
-          <div>
-            <span class="font-semibold text-gray-800">Tiered Training Packages</span>
-            <span class="text-gray-600"> Offer differentiated training based on customer segment and complexity. Enterprise clients receive more hands-on sessions; digital clients receive streamlined training with an option to upgrade for additional support (potential revenue opportunity).</span>
-          </div>
-          <div>
-            <span class="font-semibold text-gray-800">Training Content Ownership</span>
-            <span class="text-gray-600"> Create, maintain, and update all training decks and materials. Ensure consistency across the customer base and keep content aligned with product updates.</span>
-          </div>
-          <div>
-            <span class="font-semibold text-gray-800">Train the Trainer Programs</span>
-            <span class="text-gray-600"> Partner with PLabs to deliver train-the-trainer sessions for customers who want to self-enable their teams internally (e.g., Chick-fil-A model).</span>
-          </div>
-          <div>
-            <span class="font-semibold text-gray-800">Handoff Readiness</span>
-            <span class="text-gray-600"> Ensure customers meet defined criteria before transitioning to CSM ownership, reducing early-stage churn risk and setting CSMs up for success.</span>
-          </div>
+          <div><span class="font-semibold text-gray-800">Onboarding Trainings</span><span class="text-gray-600"> Handle all structured training sessions during the launch period, ensuring customers reach competency before CSM handoff.</span></div>
+          <div><span class="font-semibold text-gray-800">Tiered Training Packages</span><span class="text-gray-600"> Offer differentiated training based on customer segment and complexity. Enterprise clients receive more hands-on sessions; digital clients receive streamlined training with an option to upgrade for additional support.</span></div>
+          <div><span class="font-semibold text-gray-800">Training Content Ownership</span><span class="text-gray-600"> Create, maintain, and update all training decks and materials. Ensure consistency across the customer base and keep content aligned with product updates.</span></div>
+          <div><span class="font-semibold text-gray-800">Train the Trainer Programs</span><span class="text-gray-600"> Partner with PLabs to deliver train-the-trainer sessions for customers who want to self-enable their teams internally.</span></div>
+          <div><span class="font-semibold text-gray-800">Handoff Readiness</span><span class="text-gray-600"> Ensure customers meet defined criteria before transitioning to CSM ownership, reducing early-stage churn risk and setting CSMs up for success.</span></div>
         </div>
 
         <h3 class="text-lg font-semibold text-gray-800 mb-3">Career Pathway Opportunity</h3>
@@ -222,44 +133,110 @@
           <span class="text-gray-400">→</span>
           <span class="px-3 py-2 rounded-lg text-sm bg-[#1e3a5f] text-white font-medium">Senior CSM / Manager</span>
         </div>
-        <p class="text-gray-600">This provides a growth path for high-potential Support team members, improves retention, and ensures CSMs have deep product knowledge from hands-on implementation experience.</p>
       </div>
     </div>
 
     <!-- BENEFITS SECTION -->
     <div id="benefits" class="section">
       <h2 class="text-2xl font-bold text-gray-800 mb-6">Benefits Summary</h2>
-      
       <div class="grid md:grid-cols-3 gap-4">
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-          <span class="text-3xl">🎯</span>
-          <h3 class="font-semibold text-gray-800 mt-3 mb-2">Consistent Customer Experience</h3>
-          <p class="text-sm text-gray-600">Every customer receives the same quality onboarding regardless of CSM</p>
+        <div class="bg-white rounded-xl shadow-lg p-6"><span class="text-3xl">🎯</span><h3 class="font-semibold text-gray-800 mt-3 mb-2">Consistent Customer Experience</h3><p class="text-sm text-gray-600">Every customer receives the same quality onboarding regardless of CSM</p></div>
+        <div class="bg-white rounded-xl shadow-lg p-6"><span class="text-3xl">⚡</span><h3 class="font-semibold text-gray-800 mt-3 mb-2">Faster Time-to-Value</h3><p class="text-sm text-gray-600">Structured training accelerates the path to "Aha" moments</p></div>
+        <div class="bg-white rounded-xl shadow-lg p-6"><span class="text-3xl">🚀</span><h3 class="font-semibold text-gray-800 mt-3 mb-2">CSM Capacity</h3><p class="text-sm text-gray-600">Frees CSMs to focus on adoption, expansion, and retention</p></div>
+        <div class="bg-white rounded-xl shadow-lg p-6"><span class="text-3xl">📈</span><h3 class="font-semibold text-gray-800 mt-3 mb-2">Scalability</h3><p class="text-sm text-gray-600">Repeatable process supports enterprise growth without linear headcount increases</p></div>
+        <div class="bg-white rounded-xl shadow-lg p-6"><span class="text-3xl">💰</span><h3 class="font-semibold text-gray-800 mt-3 mb-2">Revenue Potential</h3><p class="text-sm text-gray-600">Upsell opportunity for enhanced training packages</p></div>
+        <div class="bg-white rounded-xl shadow-lg p-6"><span class="text-3xl">🌱</span><h3 class="font-semibold text-gray-800 mt-3 mb-2">Talent Development</h3><p class="text-sm text-gray-600">Clear career path improves internal retention and hiring pipeline</p></div>
+      </div>
+    </div>
+
+    <!-- ROI SECTION -->
+    <div id="roi" class="section">
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Paid Training ROI</h2>
+      <p class="text-gray-600 mb-6">Revenue opportunity from paid training sessions</p>
+
+      <div class="bg-white rounded-2xl shadow-xl p-8 mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">📊 Opportunity Overview</h3>
+        <p class="text-gray-700 mb-4">We have <strong>9,000 accounts</strong> without a support package, representing an average ARR of <strong>$3,400 per account</strong> (<strong>$30.6M total ARR</strong>). By offering paid training sessions at <strong>$250 per session</strong>, we can generate new services revenue while improving retention and adoption.</p>
+        
+        <h4 class="font-semibold text-gray-800 mb-3">Direct Revenue Opportunity</h4>
+        <table class="w-full text-sm mb-4">
+          <thead>
+            <tr class="border-b-2 border-gray-200 bg-slate-50">
+              <th class="text-left py-3 px-4">Uptake Rate</th>
+              <th class="text-left py-3 px-4">Accounts Trained</th>
+              <th class="text-left py-3 px-4">Services Revenue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100"><td class="py-3 px-4">5%</td><td class="py-3 px-4">450</td><td class="py-3 px-4">$112,500</td></tr>
+            <tr class="border-b border-gray-100 bg-green-50"><td class="py-3 px-4 font-medium">10%</td><td class="py-3 px-4 font-medium">900</td><td class="py-3 px-4 font-medium text-green-700">$225,000</td></tr>
+            <tr><td class="py-3 px-4">15%</td><td class="py-3 px-4">1,350</td><td class="py-3 px-4">$337,500</td></tr>
+          </tbody>
+        </table>
+        <p class="text-gray-600 text-sm">At just <strong>10% adoption</strong>, this generates <strong class="text-green-700">$225,000 in new annual services revenue</strong>.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl p-8 mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">📈 Indirect Revenue Impact</h3>
+        <p class="text-gray-600 mb-6">Trained customers consistently outperform untrained customers. Conservative estimates:</p>
+        
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+            <span class="text-2xl">🔒</span>
+            <h4 class="font-semibold text-gray-800 mt-2 mb-2">Retention Improvement</h4>
+            <p class="text-sm text-gray-600 mb-2">3-5 pt improvement in renewal rate</p>
+            <p class="text-sm text-gray-600 mb-2">45 accounts saved</p>
+            <p class="text-sm font-semibold text-blue-700">$153,000 preserved ARR</p>
+          </div>
+          <div class="bg-purple-50 rounded-xl p-5 border border-purple-100">
+            <span class="text-2xl">📈</span>
+            <h4 class="font-semibold text-gray-800 mt-2 mb-2">Expansion Potential</h4>
+            <p class="text-sm text-gray-600 mb-2">More likely to add seats or upgrade</p>
+            <p class="text-sm text-gray-600 mb-2">10% expand by $500 avg</p>
+            <p class="text-sm font-semibold text-purple-700">$45,000 expansion revenue</p>
+          </div>
+          <div class="bg-orange-50 rounded-xl p-5 border border-orange-100">
+            <span class="text-2xl">🎧</span>
+            <h4 class="font-semibold text-gray-800 mt-2 mb-2">Support Cost Reduction</h4>
+            <p class="text-sm text-gray-600 mb-2">Fewer reactive support tickets</p>
+            <p class="text-sm text-gray-600 mb-2">20% reduction in volume</p>
+            <p class="text-sm font-semibold text-orange-700">Frees support capacity</p>
+          </div>
         </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-          <span class="text-3xl">⚡</span>
-          <h3 class="font-semibold text-gray-800 mt-3 mb-2">Faster Time-to-Value</h3>
-          <p class="text-sm text-gray-600">Structured training accelerates the path to "Aha" moments</p>
+      </div>
+
+      <div class="bg-gradient-to-r from-[#1e3a5f] to-[#2d5a87] rounded-2xl shadow-xl p-8 mb-6 text-white">
+        <h3 class="text-lg font-semibold mb-4">💰 Combined Year-One ROI Summary</h3>
+        <div class="grid md:grid-cols-4 gap-4">
+          <div class="bg-white/10 rounded-xl p-4 text-center">
+            <p class="text-sm text-white/70 mb-1">Direct Training Revenue</p>
+            <p class="text-2xl font-bold">$225,000</p>
+          </div>
+          <div class="bg-white/10 rounded-xl p-4 text-center">
+            <p class="text-sm text-white/70 mb-1">Preserved ARR</p>
+            <p class="text-2xl font-bold">$153,000</p>
+          </div>
+          <div class="bg-white/10 rounded-xl p-4 text-center">
+            <p class="text-sm text-white/70 mb-1">Expansion Revenue</p>
+            <p class="text-2xl font-bold">$45,000</p>
+          </div>
+          <div class="bg-green-500 rounded-xl p-4 text-center">
+            <p class="text-sm text-white/90 mb-1">Total Year-One Impact</p>
+            <p class="text-2xl font-bold">$423,000</p>
+          </div>
         </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-          <span class="text-3xl">🚀</span>
-          <h3 class="font-semibold text-gray-800 mt-3 mb-2">CSM Capacity</h3>
-          <p class="text-sm text-gray-600">Frees CSMs to focus on adoption, expansion, and retention</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl p-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">🎯 Strategic Benefits Beyond Revenue</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="flex gap-3"><span class="text-green-500">✓</span><p class="text-gray-700">Proactive engagement model for accounts without dedicated support</p></div>
+          <div class="flex gap-3"><span class="text-green-500">✓</span><p class="text-gray-700">Scalable touchpoint that drives adoption without increasing headcount</p></div>
+          <div class="flex gap-3"><span class="text-green-500">✓</span><p class="text-gray-700">Leading indicator to identify expansion-ready and at-risk accounts</p></div>
+          <div class="flex gap-3"><span class="text-green-500">✓</span><p class="text-gray-700">Differentiated value that competitors may not offer at this price point</p></div>
         </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-          <span class="text-3xl">📈</span>
-          <h3 class="font-semibold text-gray-800 mt-3 mb-2">Scalability</h3>
-          <p class="text-sm text-gray-600">Repeatable process supports enterprise growth without linear headcount increases</p>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-          <span class="text-3xl">💰</span>
-          <h3 class="font-semibold text-gray-800 mt-3 mb-2">Revenue Potential</h3>
-          <p class="text-sm text-gray-600">Upsell opportunity for enhanced training packages</p>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-          <span class="text-3xl">🌱</span>
-          <h3 class="font-semibold text-gray-800 mt-3 mb-2">Talent Development</h3>
-          <p class="text-sm text-gray-600">Clear career path improves internal retention and hiring pipeline</p>
+        <div class="mt-6 bg-slate-50 rounded-lg p-4">
+          <p class="text-gray-700 text-sm">At <strong>$250 per session</strong> (approximately 7% of average contract value), this offering provides accessible, high-impact enablement while generating measurable returns.</p>
         </div>
       </div>
     </div>
@@ -269,22 +246,10 @@
       <div class="bg-white rounded-2xl shadow-xl p-8 mb-6">
         <h2 class="text-2xl font-bold text-gray-800 mb-6">Discussion Questions</h2>
         <div class="space-y-4">
-          <div class="flex gap-4 items-start">
-            <span class="w-8 h-8 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center flex-shrink-0">1</span>
-            <p class="text-gray-700 pt-1">Does this align with how you're thinking about scaling the customer org?</p>
-          </div>
-          <div class="flex gap-4 items-start">
-            <span class="w-8 h-8 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center flex-shrink-0">2</span>
-            <p class="text-gray-700 pt-1">What would a pilot look like? (e.g., start with enterprise segment only)</p>
-          </div>
-          <div class="flex gap-4 items-start">
-            <span class="w-8 h-8 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center flex-shrink-0">3</span>
-            <p class="text-gray-700 pt-1">Are there budget or headcount considerations to factor into a more detailed proposal?</p>
-          </div>
-          <div class="flex gap-4 items-start">
-            <span class="w-8 h-8 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center flex-shrink-0">4</span>
-            <p class="text-gray-700 pt-1">Who else should be part of this conversation?</p>
-          </div>
+          <div class="flex gap-4 items-start"><span class="w-8 h-8 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center flex-shrink-0">1</span><p class="text-gray-700 pt-1">Does this align with how you're thinking about scaling the customer org?</p></div>
+          <div class="flex gap-4 items-start"><span class="w-8 h-8 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center flex-shrink-0">2</span><p class="text-gray-700 pt-1">What would a pilot look like? (e.g., start with enterprise segment only)</p></div>
+          <div class="flex gap-4 items-start"><span class="w-8 h-8 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center flex-shrink-0">3</span><p class="text-gray-700 pt-1">Are there budget or headcount considerations to factor into a more detailed proposal?</p></div>
+          <div class="flex gap-4 items-start"><span class="w-8 h-8 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center flex-shrink-0">4</span><p class="text-gray-700 pt-1">Who else should be part of this conversation?</p></div>
         </div>
       </div>
       <div class="bg-green-50 rounded-2xl p-8 border border-green-200">
